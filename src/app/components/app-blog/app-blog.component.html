@@ -1,0 +1,33 @@
+<div class="container">
+  <section class="my-5">
+    <!--heading -->
+    <h2 class="font-weight-bold text-center my-5">Recent posts</h2>
+    <!--description -->
+    <p class="text-center dark-grey-text mx-auto mb-5">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas rem recusandae accusamus sit earum ipsam, obcaecati
+      esse minima similique, voluptate laudantium quod nemo molestiae omnis sequi eos! Iusto libero fugit natus atque
+      consequuntur, delectus repellendus ex omnis neque, sit sapiente.
+    </p>
+
+    <div class="row my-5" *ngFor=" let post of posts">
+      <div class="col-lg-5 col-xl-4">
+        <div class="mb-lg-0 mb-4">
+          <img class="img-fluid" [src]="blogimg" alt="Blog image">
+        </div>
+      </div>
+
+      <div class="col-lg-7 col-xl-8">
+        <!-- Post title -->
+        <h3 class="font-weight-bold mb-3"><strong>{{ post.title }}</strong></h3>
+        <p class="dark-grey-text"> {{ blogcontent }} </p>
+        <!-- Post data -->
+        <p class="text-muted">by <a>{{ post.by }}</a>, {{ post.on }}</p>
+        <a class="btn btn-primary text-white">Read more</a>
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+  </section>
+  <!-- Section: Blog v.3 -->
+</div>

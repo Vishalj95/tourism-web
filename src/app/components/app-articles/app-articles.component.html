@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-md-4" *ngFor="let article of articles">
+    <div class="card mb-3">
+      <img class="card-img-top" [src]="artimg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title"> {{ article.title }} </h5>
+        <p class="card-text">{{ article.content }}</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+      <a class="btn btn-primary" routerLink="/blog">Deatils</a>
+    </div>
+  </div>
+</div>

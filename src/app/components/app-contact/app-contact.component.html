@@ -1,0 +1,92 @@
+<div class="container">
+  <section class="section pb-5">
+
+    <h2 class="pt-4 text-center">Contact us</h2>
+    <p class="pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
+      numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur
+      accusamus veniam.</p>
+
+    <div class="row">
+      <div class="col-lg-5 mb-4">
+        <div class="card">
+
+          <div class="card-body">
+            <!--Header-->
+            <div class="">
+              <h3><i class="fa fa-envelope"></i> Write to us:</h3>
+            </div>
+
+            <br>
+
+            <!--Body-->
+            <form [formGroup]="myForm" (ngSubmit)="addForm(myForm.value)">
+
+              <div class="">
+                <i class="fa fa-user"></i>
+                <label for="name">Your name</label>
+                <input type="text" id="name" class="form-control" formControlName="name">
+              </div>
+
+              <div class="">
+                <i class="fa fa-envelope"></i>
+                <label for="email">Your email</label>
+                <input type="email" id="email" class="form-control" formControlName="email">
+              </div>
+
+              <div class="">
+                <i class="fa fa-pencil"></i>
+                <label for="message">Message</label>
+                <textarea type="text" id="message" class="form-control" rows="3" formControlName="message"></textarea>
+              </div>
+
+              <div class="text-center mt-4">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+        <!--Form with header-->
+
+      </div>
+
+      <div class="col-lg-7">
+
+        <!--Google map-->
+        <!-- <div id="map-container-7" class="z-depth-1-half map-container" style="height: 400px"></div> -->
+        <div id="googleMap" #googleMap style="width:100%; height:300px"></div>
+
+        <br>
+        <!---->
+        <div class="row text-center">
+          <div class="col-md-4">
+            <a class="btn-floating blue accent-1"><i class="fa fa-map-marker"></i></a>
+            <p> Main st, S.V. Road,</p>
+            <p> Borivali</p>
+            <p> Mumbai</p>
+          </div>
+
+          <div class="col-md-4">
+            <a class="btn-floating blue accent-1"><i class="fa fa-phone"></i></a>
+            <p>+91 5555 555555</p>
+          </div>
+
+          <div class="col-md-4">
+            <a class="btn-floating blue accent-1"><i class="fa fa-envelope"></i></a>
+            <p>startourism@gmail.com</p>
+          </div>
+        </div>
+
+      </div>
+      <!--Grid column-->
+
+    </div>
+
+  </section>
+  <!--Section: Contact v.1-->
+
+
+
+</div>
